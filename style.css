@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #041C32;
+    color: #DDE6ED;
+    text-align: center;
+}
+
+#movie-backdrop {
+    width: 100%;
+}
+
+.container {
+    margin: 0px;
+    padding: 50px;
+    padding-top: 100px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."; 
+}
+
+img {
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 5px;
+}
+
+#actors {
+    margin: 24px 16px 0 0;
+}
+
+.logo {
+    position:relative;
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 300px;
+    height: 170px;
+}
+.nav--div {
+    position: fixed;
+    background-color: black;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+}
+
+.nav {
+    float: right;
+    font-size: 25px;
+}
+
+li {
+    display: inline;
+    margin: 20px;
+    color: white;
+}
+
+.home, .about, .actors, .genre, .genreButton, .filter, .filterButton {
+    border: none;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+}
+
+#search {
+    border-radius: 10px;
+}
+.aboutDiv {
+    margin-top: 200px;
+    text-align: center;
+}
+.our--photos {
+    width: 200px;
+    height: 300px;
+}
+
+.CONTAINER {
+    background-color: aquamarine;
+}
+
+
+.actors--page, .movieHome, .movie--genres {
+    padding-top: 100px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      ". . . . . "
+      ". . . . . "
+      ". . . . . "
+      ". . . . . "; 
+
+    background-color: rgba(250, 168, 106, 0.357);
+}
+
+.actor--img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.posters {
+    width: 300px;
+    height: 170px;
+    border: 1px solid red;
+}
+
+.movieImg {
+    width: 350px;
+    height: 197px;
+    border: 1px solid red;
+    margin: 20px;
+}
+
+.movieDetail {
+    border: 1px solid red;
+}
+
+.movie--genres {
+    margin-top: 100px;
+}
+
+.filterDiv  {
+    padding-top: 100px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      ". . . . . "
+      ". . . . . "
+      ". . . . . "
+      ". . . . . "; 
+}
+
+
+.hidden {
+    display: none;
+}
+
+#actors {
+    
+    display: grid;
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+    gap: 20px;
+    place-items: center;
+}
+
+
+#actors li {
+    margin-left: 100px;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+#actors li:hover {
+    transform: scale(1.1);
+    
+}
+
+.similar-movies {
+    display: grid;
+    gap: 40px;
+    
+}
+
+#movie-poster,
+.card,
+iframe {
+    border-radius: 10px;
+    border-color: transparent;
+    width: 500px;
+    height: 350px;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.spoken-languages__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+}
+
+.vote-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #04293A;
+    color: #A5D7E8;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.card button {
+    margin-bottom: 10px;
+}
+
+.card--actor p {
+    margin: 0;
+}
+
+hr {
+    border-top: 2px solid #A5D7E8;
+}
+
+@media (min-width: 728px) {
+
+    .similar-movies {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-auto-rows: 1fr;
+    }
+}
